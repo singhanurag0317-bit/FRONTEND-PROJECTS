@@ -16,7 +16,7 @@
 body{
     margin: 0;
     font-family: 'inter', sans-serif;
-    background-color: var(--bg);
+    background-color: rgb(227, 221, 221);
     color: var(--ink);
     line-height: 1.6;
 }
@@ -33,7 +33,7 @@ p{
 
 
 ::selection {
-    background-color: var(--accent);
+    background-color: rgb(253, 46, 46);
     color: #fff;
 }
 
@@ -42,7 +42,7 @@ p{
   padding: 96px 24px 120px;
   text-align: center;
   color: #fff;
-  background: linear-gradient(to bottom, #0f172a, #1e3a8a, #4338ca);
+  background: linear-gradient(to bottom, #200b01, #8b2e17, #e17878);
   overflow: hidden;
 }
 
@@ -54,7 +54,7 @@ p{
   bottom: 48px;
   width: 120px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  background: linear-gradient(90deg, transparent, rgb(246, 243, 243), transparent);
   border-radius: 999px;
 }
 
@@ -107,7 +107,7 @@ p{
   width: 56%;
   height: 6px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--brand), var(--accent));
+  background: linear-gradient(90deg, var(--brand) var(--accent));
   opacity: 0.15;
 }
 
@@ -117,21 +117,21 @@ p{
   line-height: 1;
   float: left;
   margin: 0.1rem 0.5rem 0 0;
-  color: var(--brand);
+  color: rgb(236, 31, 31);
 }
 
 a[target="_blank"] {
-  color: var(--brand);
+  color: rgb(236, 31, 31);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid rgba(43, 108, 176, 0.3);
+  border-bottom: 1px solid rgb(236, 31, 31);
 }
 a[target="_blank"]::after {
   content: " ↗";
   font-weight: 600;
 }
 a[target="_blank"]:hover {
-  color: #1d4ed8;
+  color: #9f5959;
   border-color: #1d4ed8;
 }
 
@@ -160,4 +160,114 @@ ul.values li::marker {
   background: linear-gradient(180deg, #ffffff, #fbfbfe);
   border: 1px solid var(--line);
   border-color: 0.35 ease;
+}
+.member::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-top: 24px solid rgba(139, 92, 246, 0.18);
+  border-right: 24px solid rgba(139, 92, 246, 0.18);
+  border-top-right-radius: 14px;
+}
+/*.member[data-role="ceo"]::after {
+  content: " CEO ";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.72rem;
+  letter-spacing: 0.4px;
+  background: linear-gradient(90deg, var(--gold), #f5e6a8);
+  color: #2a2a2a;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}*/
+.member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+  border-color: #dfe6fb;
+}
+.member img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  border: 3px solid #080a10;
+  margin-bottom: 10px;
+}
+.member h3 {
+  margin: 0.25rem 0 0.25rem;
+  color: #9c0707;
+}
+.member small {
+  color: var(--muted);
+}
+.member:nth-child(odd) {
+  background: linear-gradient(180deg, #ffffff, #fefeff);
+}
+
+/* ---------- Quote ---------- */
+blockquote {
+  position: relative;
+  margin: 0;
+  background: #f4f7ff;
+  border: 1px  #9c0707;
+  border-style: double;
+  padding: 22px 24px 24px;
+  border-radius: 15px;
+  color: #334155;
+}
+/* Quote mark (pseudo-element) */
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -22px;
+  left: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: #94a3b8;
+  opacity: 0.35;
+}
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  border: 1px solid #9c0707;
+  border-style: ridge;
+  padding: 22px;
+  border-radius: 16px;
+  background: #fff;
+}
+.cta .btn {
+    --_bg: linear-gradient(90deg, rgb(183, 40, 40));
+    padding: 12px 18px;
+    border-radius: 999px;
+    color: #e4d1d1;
+    background: var(--_bg);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgb(24 23 23);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(150, 97, 97, 0.3);
+}
+.cta .btn:focus-visible {
+  outline: 5px solid #dd4c4c;
+  outline-offset: 1px;
+}
+footer {
+  padding: 26px;
+  text-align: center;
+  color: #020407;
 }
