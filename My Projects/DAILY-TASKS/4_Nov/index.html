@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="profile-card">
+           <img id="profile-image" src="aa.jpg" alt="">
+            <h1>Anurag Jadon</h1>
+            <h2>Frontend Developer</h2>
+            <p>A creative frontend developer specializing in building beautiful, high-performance user interfaces.
+                Proficient in React, JavaScript, HTML, and CSS, with a focus on responsive design and intuitive user
+                experiences. Passionate about clean code and modern web technologies.</p>
+
+            <div id="skills">
+                <h3>Skills: </h3>
+                <div  class="skills-chip" id="skills-list">
+                    [ HTML ] [ CSS ] [ JavaScript ]
+                </div>
+            </div>
+            <div id="details" style="display:none;">
+                <p>Additional details can go here</p>
+            </div>
+        </div>
+
+        <div id="control-panel">
+            <h3>Control Panel</h3>
+
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input">
+
+            <label for="role-input">Role:</label>
+            <input type="text" id="role-input">
+
+            <label for="bio-input">Bio:</label>
+            <textarea id="bio-input"></textarea>
+
+            <label for="skill-input">Add Skill:</label>
+            <input type="text" id="skill-input">
+            <button id="add-skill-btn">Add Skill</button>
+            <button id="remove-skill-btn">Remove Last Skill</button>
+
+            <div id="theme-buttons">
+                <p>Choose Theme Color:</p>
+                <button class="theme-btn" data-color="blue">Blue</button>
+                <button class="theme-btn" data-color="green">Green</button>
+                <button class="theme-btn" data-color="red">Red</button>
+            </div>
+            <button id="toggle-details-btn">Show/Hide Details</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

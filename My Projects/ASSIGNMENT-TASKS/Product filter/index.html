@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product filter</title>
+</head>
+<body>
+    <section id="product-filter">
+        <div id="control" role=" toolbar">
+            <button class="button" id="filter-all">All</button>
+            <button class="button" id="filter-electronics">Electronics</button>
+            <button class="button" id="filter-clothing">Clothing</button>
+            <button class="button" id="filter-books">Books</button>
+
+            <label for="searchinput" class="visually-hidden">Search products</label>
+            <input type="search" id="searchinput" placeholder="search here:">
+        </div>
+        <ul class="product-list">
+            <li class="product-item" data-category="electronics">Smartphone</li>
+            <li class="product-item" data-category="electronics">Headphones</li>
+            <li class="product-item" data-category="electronics">Smartwatch</li>
+            <li class="product-item" data-category="electronics">Laptop</li>
+             <li class="product-item" data-category="electronics">Charger</li>
+            <li class="product-item" data-category="clothing">Classic-tshirt</li>
+            <li class="product-item" data-category="clothing">Denim jeans</li>
+            <li class="product-item"  data-category="clothing" >Leather jacket</li>
+            <li class="product-item"  data-category="clothing">Sneakers</li>
+            <li class="product-item"  data-category="books">Mystery Novels</li>            
+            <li class="product-item"  data-category="books">Self-help books</li>
+             <li class="product-item"  data-category="books">Fiction</li>
+        </ul>
+        <div class="no-result" hidden>No product found</div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: #1b218e8f;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(7, 48, 68);
+}
+
+#task-input {
+    padding: 10px;
+    width: 200px;
+
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(30, 14, 15);
+}
+
+#task-list {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid rgb(27, 13, 14);
+    border-radius: 10px;
+}
+
+#addbtn {
+    cursor: pointer;
+
+    padding: 8px 12px;
+    margin-left: 5px;
+    font-size: 16px;
+    color: rgb(246, 245, 245);
+    background-color: rgb(66, 76, 217);
+
+    border-radius: 5px;
+
+}
+
+#addbtn:hover {
+    background-color: rgb(11, 11, 163);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: rgb(91, 89, 116);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+li button {
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+    border-radius: 2px;
+}
+li button:nth-child(2){
+    background-color: rgb(180, 37, 37);
+}
+li button:nth-child(1){
+    background-color: rgb(229, 220, 103);
+}
+li button:nth-child(2):hover{
+    background-color: rgb(229, 10, 10);
+}
+li button:nth-child(1):hover{
+    background-color: rgb(247, 231, 5);
+}

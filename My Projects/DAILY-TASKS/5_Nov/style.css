@@ -1,0 +1,42 @@
+body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-wrap: wrap;
+    background: #eee
+}
+
+.chessboard {
+    display: grid;
+    margin: 0;
+    padding: 0; 
+    /* flex-wrap: wrap;*/
+    grid-template-columns: repeat(8, 90px);
+    grid-template-rows: repeat(8, 90px);
+    border: 4px solid #333;
+
+}
+
+.square,
+.square-rev {
+    width: 90px;
+    height: 90px;
+}
+
+.square:nth-child(odd) {
+    background: #f0d9b5;
+}
+
+.square:nth-child(even) {
+    background: #b58863;
+}
+
+.square-rev:nth-child(even) {
+    background: #f0d9b5;
+}
+
+.square-rev:nth-child(odd) {
+    background: #b58863;
+}
