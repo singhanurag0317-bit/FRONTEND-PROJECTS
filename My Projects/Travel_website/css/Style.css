@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins' sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: whitesmoke;
+    padding-bottom: 60px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+p{
+    margin-bottom: 15px;
+    color: rgb(244, 245, 247)
+}
+
+header{
+    background: #0d6efd;
+    padding: 10px 0;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+  
+    
+    list-style: none;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3sec;
+  
+}
+
+nav ul li a:hover {
+    color: rgb(41, 66, 208);
+}
+
+.hero {
+    background: url(https://img.freepik.com/free-photo/travel-concept-with-landmarks_23-2149153256.jpg) center/cover no-repeat;
+    text-align: center;
+    padding: 120px 20px;
+    color: white;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00060e;
+}
+.hero images
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 20px;
+color: white;
+}
+
+.hero .btn {
+display: inline-block;
+padding: 12px 25px;
+background: #ffdd57;
+color: #222;
+border-radius: 25px;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #fca311;
+    color: white;
+}
+
+.featured {
+    padding: 40px 20px;
+   text-align: center;
+   width: 100%;
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3{
+    padding: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+.about .why-us {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+.about p{
+    color: black;
+    
+}
+.why-us ul {
+    list-style: none;
+}
+
+.why-us li {
+    margin: 10px 0;
+    padding-left: 0;
+    position: relative;
+}
+
+.why-us li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.service p {
+    color: rgb(42, 41, 4);
+}
+.service:hover {
+    transform: translateY(-5px);
+    background: #0d6efd;
+}
+
+
+
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+
+}
+.gallery p {
+    color: black;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+   width: 400px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.contact {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 12px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+form button:hover {
+    background: #084298;
+}
+.contact p {
+    color: black;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.hero h1{
+    font-size: 2.2rem;
+}
+
+.destinations{
+    flex-direction: column;
+    align-items: center;
+}
